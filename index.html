@@ -11771,9 +11771,17 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Library-imports">Library imports<a class="anchor-link" href="#Library-imports">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[106]:</div>
+<div class="prompt input_prompt">In&nbsp;[179]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -11784,9 +11792,17 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="DataFrame-to-store-QMP-dataset-and-the-modified-dataset">DataFrame to store QMP dataset and the modified dataset<a class="anchor-link" href="#DataFrame-to-store-QMP-dataset-and-the-modified-dataset">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[127]:</div>
+<div class="prompt input_prompt">In&nbsp;[180]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">qmp_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;QMP.csv&quot;</span><span class="p">)</span>
@@ -11798,9 +11814,17 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Describing-dataframe">Describing dataframe<a class="anchor-link" href="#Describing-dataframe">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[123]:</div>
+<div class="prompt input_prompt">In&nbsp;[181]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">qmp_data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -11816,7 +11840,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[123]:</div>
+<div class="prompt output_prompt">Out[181]:</div>
 
 
 
@@ -12067,14 +12091,22 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Create-binary-data">Create binary data<a class="anchor-link" href="#Create-binary-data">&#182;</a></h2><h3 id="for-every-column-in-qwp_data,-each-options-1-to-5-is-mapped-to-True-(numeric-1)--where-each-column-contains-a-unique-Postive">for every <code>col</code>umn in <code>qwp_data</code>, each options <code>1 to 5</code> is mapped to <code>True</code> (numeric <code>1</code>)  where each column contains a unique Postive<a class="anchor-link" href="#for-every-column-in-qwp_data,-each-options-1-to-5-is-mapped-to-True-(numeric-1)--where-each-column-contains-a-unique-Postive">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[128]:</div>
+<div class="prompt input_prompt">In&nbsp;[182]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">qmp_data</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">qmp_data</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-        <span class="n">new_qmp_data</span><span class="p">[</span><span class="n">x</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">isna</span><span class="p">(</span><span class="n">qmp_data</span><span class="p">[</span><span class="s2">&quot;Q1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span><span class="p">}))</span>
+        <span class="n">new_qmp_data</span><span class="p">[</span><span class="n">col</span><span class="o">+</span><span class="s1">&#39;~&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">isna</span><span class="p">(</span><span class="n">qmp_data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span><span class="p">}))</span>
 </pre></div>
 
 </div>
@@ -12082,13 +12114,21 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="isna-returns-a-dataframe-where-every-na-is-True-and-the-rest-is-False"><code>isna</code> returns a dataframe where every <code>na</code> is <code>True</code> and the rest is <code>False</code><a class="anchor-link" href="#isna-returns-a-dataframe-where-every-na-is-True-and-the-rest-is-False">&#182;</a></h3><h3 id="we-map-True-to-0-and-False-to-1-and-we-get-the-required-dataframe">we map <code>True</code> to <code>0</code> and <code>False</code> to 1 and we get the required dataframe<a class="anchor-link" href="#we-map-True-to-0-and-False-to-1-and-we-get-the-required-dataframe">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[130]:</div>
+<div class="prompt input_prompt">In&nbsp;[183]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">new_qmp_data</span><span class="p">:</span>
-    <span class="n">new_qmp_data</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_qmp_data</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="kc">True</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="kc">False</span><span class="p">:</span><span class="mi">1</span><span class="p">})</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">new_qmp_data</span><span class="p">:</span>
+    <span class="n">new_qmp_data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_qmp_data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="kc">True</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="kc">False</span><span class="p">:</span><span class="mi">1</span><span class="p">})</span>
 </pre></div>
 
 </div>
@@ -12096,9 +12136,17 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Describing-dataframe-to-verify">Describing dataframe to verify<a class="anchor-link" href="#Describing-dataframe-to-verify">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="prompt input_prompt">In&nbsp;[184]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">new_qmp_data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -12114,7 +12162,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[131]:</div>
+<div class="prompt output_prompt">Out[184]:</div>
 
 
 
@@ -12137,27 +12185,27 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Q11</th>
-      <th>Q12</th>
-      <th>Q13</th>
-      <th>Q14</th>
-      <th>Q15</th>
-      <th>Q101</th>
-      <th>Q102</th>
-      <th>Q103</th>
-      <th>Q104</th>
-      <th>Q105</th>
+      <th>Q1~1</th>
+      <th>Q1~2</th>
+      <th>Q1~3</th>
+      <th>Q1~4</th>
+      <th>Q1~5</th>
+      <th>Q10~1</th>
+      <th>Q10~2</th>
+      <th>Q10~3</th>
+      <th>Q10~4</th>
+      <th>Q10~5</th>
       <th>...</th>
-      <th>Q181</th>
-      <th>Q182</th>
-      <th>Q183</th>
-      <th>Q184</th>
-      <th>Q185</th>
-      <th>Q271</th>
-      <th>Q272</th>
-      <th>Q273</th>
-      <th>Q274</th>
-      <th>Q275</th>
+      <th>Q18~1</th>
+      <th>Q18~2</th>
+      <th>Q18~3</th>
+      <th>Q18~4</th>
+      <th>Q18~5</th>
+      <th>Q27~1</th>
+      <th>Q27~2</th>
+      <th>Q27~3</th>
+      <th>Q27~4</th>
+      <th>Q27~5</th>
     </tr>
   </thead>
   <tbody>
@@ -12192,22 +12240,22 @@ div#notebook {
       <td>0.067879</td>
       <td>0.358182</td>
       <td>0.552121</td>
-      <td>0.013333</td>
-      <td>0.008485</td>
-      <td>0.067879</td>
-      <td>0.358182</td>
-      <td>0.552121</td>
+      <td>0.015758</td>
+      <td>0.046061</td>
+      <td>0.155758</td>
+      <td>0.389697</td>
+      <td>0.392727</td>
       <td>...</td>
-      <td>0.013333</td>
-      <td>0.008485</td>
-      <td>0.067879</td>
-      <td>0.358182</td>
-      <td>0.552121</td>
-      <td>0.013333</td>
-      <td>0.008485</td>
-      <td>0.067879</td>
-      <td>0.358182</td>
-      <td>0.552121</td>
+      <td>0.012121</td>
+      <td>0.063030</td>
+      <td>0.153333</td>
+      <td>0.354545</td>
+      <td>0.416970</td>
+      <td>0.004848</td>
+      <td>0.052121</td>
+      <td>0.109697</td>
+      <td>0.206667</td>
+      <td>0.172121</td>
     </tr>
     <tr>
       <th>std</th>
@@ -12216,22 +12264,22 @@ div#notebook {
       <td>0.251614</td>
       <td>0.479611</td>
       <td>0.497427</td>
-      <td>0.114732</td>
-      <td>0.091749</td>
-      <td>0.251614</td>
-      <td>0.479611</td>
-      <td>0.497427</td>
+      <td>0.124574</td>
+      <td>0.209680</td>
+      <td>0.362735</td>
+      <td>0.487829</td>
+      <td>0.488505</td>
       <td>...</td>
-      <td>0.114732</td>
-      <td>0.091749</td>
-      <td>0.251614</td>
-      <td>0.479611</td>
-      <td>0.497427</td>
-      <td>0.114732</td>
-      <td>0.091749</td>
-      <td>0.251614</td>
-      <td>0.479611</td>
-      <td>0.497427</td>
+      <td>0.109460</td>
+      <td>0.243091</td>
+      <td>0.360418</td>
+      <td>0.478520</td>
+      <td>0.493207</td>
+      <td>0.069483</td>
+      <td>0.222339</td>
+      <td>0.312606</td>
+      <td>0.405037</td>
+      <td>0.377600</td>
     </tr>
     <tr>
       <th>min</th>
@@ -12292,18 +12340,18 @@ div#notebook {
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
       <td>...</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>1.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>75%</th>
@@ -12326,8 +12374,8 @@ div#notebook {
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>max</th>
@@ -12365,9 +12413,17 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="writing-dataframe-to-a-csv-file">writing dataframe to a csv file<a class="anchor-link" href="#writing-dataframe-to-a-csv-file">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[132]:</div>
+<div class="prompt input_prompt">In&nbsp;[185]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">new_qmp_data</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;QMP_sheet1.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
@@ -12378,9 +12434,17 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="DataFrame-to-store-QWP-dataset-and-the-modified-dataset&#182;">DataFrame to store QWP dataset and the modified dataset&#182;<a class="anchor-link" href="#DataFrame-to-store-QWP-dataset-and-the-modified-dataset&#182;">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[135]:</div>
+<div class="prompt input_prompt">In&nbsp;[186]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">qwl_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;QWL.csv&quot;</span><span class="p">)</span>
@@ -12392,14 +12456,22 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Create-binary-data">Create binary data<a class="anchor-link" href="#Create-binary-data">&#182;</a></h2><h3 id="for-every-column-in-qwp_data,-each-options-1-to-5-is-mapped-to-True-(numeric-1)--where-each-column-contains-a-unique-Postive">for every <code>col</code>umn in <code>qwp_data</code>, each options <code>1 to 5</code> is mapped to <code>True</code> (numeric <code>1</code>)  where each column contains a unique Postive<a class="anchor-link" href="#for-every-column-in-qwp_data,-each-options-1-to-5-is-mapped-to-True-(numeric-1)--where-each-column-contains-a-unique-Postive">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[138]:</div>
+<div class="prompt input_prompt">In&nbsp;[187]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">qwl_data</span><span class="p">:</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">qwl_data</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-        <span class="n">new_qwl_data</span><span class="p">[</span><span class="n">x</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">isna</span><span class="p">(</span><span class="n">qwl_data</span><span class="p">[</span><span class="s2">&quot;Q1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span><span class="p">}))</span>
+        <span class="n">new_qwl_data</span><span class="p">[</span><span class="n">col</span><span class="o">+</span><span class="s1">&#39;~&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">isna</span><span class="p">(</span><span class="n">qwl_data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:</span><span class="mi">1</span><span class="p">}))</span>
 </pre></div>
 
 </div>
@@ -12407,13 +12479,21 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="isna-returns-a-dataframe-where-every-na-is-True-and-the-rest-is-False"><code>isna</code> returns a dataframe where every <code>na</code> is <code>True</code> and the rest is <code>False</code><a class="anchor-link" href="#isna-returns-a-dataframe-where-every-na-is-True-and-the-rest-is-False">&#182;</a></h3><h3 id="we-map-True-to-0-and-False-to-1-and-we-get-the-required-dataframe">we map <code>True</code> to <code>0</code> and <code>False</code> to 1 and we get the required dataframe<a class="anchor-link" href="#we-map-True-to-0-and-False-to-1-and-we-get-the-required-dataframe">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[140]:</div>
+<div class="prompt input_prompt">In&nbsp;[188]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">new_qwl_data</span><span class="p">:</span>
-    <span class="n">new_qwl_data</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_qwl_data</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="kc">True</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="kc">False</span><span class="p">:</span><span class="mi">1</span><span class="p">})</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">new_qwl_data</span><span class="p">:</span>
+    <span class="n">new_qwl_data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_qwl_data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">({</span><span class="kc">True</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="kc">False</span><span class="p">:</span><span class="mi">1</span><span class="p">})</span>
 </pre></div>
 
 </div>
@@ -12421,9 +12501,17 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Describing-dataframe-to-verify">Describing dataframe to verify<a class="anchor-link" href="#Describing-dataframe-to-verify">&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[141]:</div>
+<div class="prompt input_prompt">In&nbsp;[189]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">new_qwl_data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -12439,7 +12527,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[141]:</div>
+<div class="prompt output_prompt">Out[189]:</div>
 
 
 
@@ -12462,27 +12550,27 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Q11</th>
-      <th>Q12</th>
-      <th>Q13</th>
-      <th>Q14</th>
-      <th>Q15</th>
-      <th>Q101</th>
-      <th>Q102</th>
-      <th>Q103</th>
-      <th>Q104</th>
-      <th>Q105</th>
+      <th>Q1~1</th>
+      <th>Q1~2</th>
+      <th>Q1~3</th>
+      <th>Q1~4</th>
+      <th>Q1~5</th>
+      <th>Q10~1</th>
+      <th>Q10~2</th>
+      <th>Q10~3</th>
+      <th>Q10~4</th>
+      <th>Q10~5</th>
       <th>...</th>
-      <th>Q181</th>
-      <th>Q182</th>
-      <th>Q183</th>
-      <th>Q184</th>
-      <th>Q185</th>
-      <th>Q271</th>
-      <th>Q272</th>
-      <th>Q273</th>
-      <th>Q274</th>
-      <th>Q275</th>
+      <th>Q18~1</th>
+      <th>Q18~2</th>
+      <th>Q18~3</th>
+      <th>Q18~4</th>
+      <th>Q18~5</th>
+      <th>Q27~1</th>
+      <th>Q27~2</th>
+      <th>Q27~3</th>
+      <th>Q27~4</th>
+      <th>Q27~5</th>
     </tr>
   </thead>
   <tbody>
@@ -12517,22 +12605,22 @@ div#notebook {
       <td>0.067879</td>
       <td>0.358182</td>
       <td>0.552121</td>
-      <td>0.013333</td>
-      <td>0.008485</td>
-      <td>0.067879</td>
-      <td>0.358182</td>
-      <td>0.552121</td>
+      <td>0.015758</td>
+      <td>0.046061</td>
+      <td>0.155758</td>
+      <td>0.389697</td>
+      <td>0.392727</td>
       <td>...</td>
-      <td>0.013333</td>
-      <td>0.008485</td>
-      <td>0.067879</td>
-      <td>0.358182</td>
-      <td>0.552121</td>
-      <td>0.013333</td>
-      <td>0.008485</td>
-      <td>0.067879</td>
-      <td>0.358182</td>
-      <td>0.552121</td>
+      <td>0.012121</td>
+      <td>0.063030</td>
+      <td>0.153333</td>
+      <td>0.354545</td>
+      <td>0.416970</td>
+      <td>0.004848</td>
+      <td>0.052121</td>
+      <td>0.109697</td>
+      <td>0.206667</td>
+      <td>0.172121</td>
     </tr>
     <tr>
       <th>std</th>
@@ -12541,22 +12629,22 @@ div#notebook {
       <td>0.251614</td>
       <td>0.479611</td>
       <td>0.497427</td>
-      <td>0.114732</td>
-      <td>0.091749</td>
-      <td>0.251614</td>
-      <td>0.479611</td>
-      <td>0.497427</td>
+      <td>0.124574</td>
+      <td>0.209680</td>
+      <td>0.362735</td>
+      <td>0.487829</td>
+      <td>0.488505</td>
       <td>...</td>
-      <td>0.114732</td>
-      <td>0.091749</td>
-      <td>0.251614</td>
-      <td>0.479611</td>
-      <td>0.497427</td>
-      <td>0.114732</td>
-      <td>0.091749</td>
-      <td>0.251614</td>
-      <td>0.479611</td>
-      <td>0.497427</td>
+      <td>0.109460</td>
+      <td>0.243091</td>
+      <td>0.360418</td>
+      <td>0.478520</td>
+      <td>0.493207</td>
+      <td>0.069483</td>
+      <td>0.222339</td>
+      <td>0.312606</td>
+      <td>0.405037</td>
+      <td>0.377600</td>
     </tr>
     <tr>
       <th>min</th>
@@ -12617,18 +12705,18 @@ div#notebook {
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
       <td>...</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>1.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>75%</th>
@@ -12651,8 +12739,8 @@ div#notebook {
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
     </tr>
     <tr>
       <th>max</th>
@@ -12690,9 +12778,17 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="writing-dataframe-to-a-csv-file">writing dataframe to a csv file<a class="anchor-link" href="#writing-dataframe-to-a-csv-file">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[142]:</div>
+<div class="prompt input_prompt">In&nbsp;[190]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">new_qwl_data</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;QWL_sheet1.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
