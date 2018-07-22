@@ -7,10 +7,18 @@ body {
   justify-content: center
   align-items: center;
 }
-.parallax {
-/* The image used */
-  background-image: url('back.jpeg');
-/* Set a specific height */
+.parallax1 {
+  background-image: url('https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
+  background-size: 100%;
+  height: 50vh;
+/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parallax2 {
+  background-image: url('https://media.giphy.com/media/3og0IV7MOCfnm85iRa/giphy.gif');
+  background-size: 100%;
   height: 50vh;
 /* Create the parallax scrolling effect */
   background-attachment: fixed;
