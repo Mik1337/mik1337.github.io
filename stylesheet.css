@@ -1,0 +1,57 @@
+body {
+  background-image: url("https://media.giphy.com/media/Vs4EbNX0IChNe/giphy.gif");
+  background-color: black;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center
+  align-items: center;
+}
+.parallax {
+/* The image used */
+  background-image: url('back.jpeg');
+/* Set a specific height */
+  height: 50vh;
+/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.colourmod{
+  text-shadow:0.5vw 0.5vw 0.5vw #FD04D7;
+  font-weight:normal;
+  font-style:italic;
+  font-weight:700;
+  text-transform:uppercase;
+  text-align:center;
+  font-family:'Fira Sans Condensed', sans-serif;
+  margin: 10;
+}
+.bigbig {
+  color:#ddd;
+  font-size:12vw;
+  line-height: 12vw;
+}
+.big {
+  color:#eee;
+  font-size:4vw;
+  line-height: 4vw;
+}
+.small {
+  color:#fff;
+  font-size:2vw;
+  line-height: 3vw;
+}
+.rotato {
+  -ms-transform: rotate(-7deg); /* IE 9 */
+  -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+  transform: rotate(-7deg);
+}
+.container {
+  width: 75vw;
+  margin: 150; 
+}
+.iconspacing {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
