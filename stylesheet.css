@@ -1,7 +1,7 @@
 body {
   background-image: url("https://media.giphy.com/media/Vs4EbNX0IChNe/giphy.gif");
   background-color: black;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center
