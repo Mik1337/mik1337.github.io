@@ -23,7 +23,7 @@ body {
   transform:translate(-50%,-50%);
   -ms-transform:translate(-50%,-50%)
 }
-.parallax1, .parallax2 {
+.parallax1, .parallax2, .parallax3, .parallax4 {
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -33,11 +33,20 @@ body {
   background-repeat: no-repeat;
 }
 .parallax1{
+  /* Student of IM  */
   background-image: url('https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
   vertical-align: middle;
 }
 .parallax2 {
-  background-image: url('https://media.giphy.com/media/3og0IV7MOCfnm85iRa/giphy.gif');
+  /* Nyander promo */
+  /* background-image: url('https://media.giphy.com/media/ArAgo5dU2z2xO/giphy.gif');  eye lasers*/
+  /* background-image: url('https://media.giphy.com/media/yVjAGbnsURRiU/giphy.gif'); */
+  background-image: url('https://media.giphy.com/media/IeCVaFnmXFpjq/giphy.gif');
+}
+.parallax3 {
+  /*  @me if you wanna skeet me */
+  /* background-image: url('https://media.giphy.com/media/5yaou1jFxTV6M/giphy.gif'); */
+  background-image: url('https://media.giphy.com/media/l41lO0QvEQ8kjaIko/giphy.gif');
 }
 .colourmod{
   text-shadow:0.5vw 0.5vw 0.5vw #FD04D7;
