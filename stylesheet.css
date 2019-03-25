@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   justify-content: center
   align-items: center;
+  scroll-behavior: smooth;
 }
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
