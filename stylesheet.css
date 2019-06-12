@@ -8,6 +8,11 @@ body {
   align-items: center;
   scroll-behavior: smooth;
 }
+@media only screen and (max-width: 600px) {
+    body {
+      background-size: cover  ;
+    }
+}
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
