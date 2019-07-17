@@ -12,6 +12,14 @@ body {
     body {
       background-size: cover  ;
     }
+    .shrink {
+      width: 50px;
+      height: 300px;
+    }
+}
+figure {
+  display: block;
+  width: 50vw;
 }
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
@@ -46,24 +54,16 @@ body {
 }
 .parallax2 {
   /* Nyander promo */
-  /* background-image: url('https://media.giphy.com/media/ArAgo5dU2z2xO/giphy.gif');  eye lasers*/
-  /* background-image: url('https://media.giphy.com/media/yVjAGbnsURRiU/giphy.gif'); */
-  /* background-image: url('https://media.giphy.com/media/IeCVaFnmXFpjq/giphy.gif'); */
   background-image: url(https://media.giphy.com/media/zYQyUBXhM9RhS/giphy.gif);
 }
-/* .parallax3 {
-   /* tinder
-  /* background-image: url('https://media.giphy.com/media/5yaou1jFxTV6M/giphy.gif');
-  /* background-image: url('https://thumbs.gfycat.com/QueasyBowedCurassow-small.gif');
-} */
 .parallax2point5 {
+  /* wakatime */
   padding-top: 25px;
   background-image: url(https://media.giphy.com/media/d3MKIfI3JJPtCjba/giphy.gif);
   /* style=position: absolute; */
 }
 .parallax3 {
   /*  @me if you wanna skeet me */
-  /* background-image: url('https://media.giphy.com/media/5yaou1jFxTV6M/giphy.gif'); */
   background-image: url(https://media.giphy.com/media/l41lO0QvEQ8kjaIko/giphy.gif);
 }
 .colourmod{
