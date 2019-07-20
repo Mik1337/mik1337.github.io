@@ -72,6 +72,8 @@ figure {
 .parallax3 {
   /*  @me if you wanna skeet me */
   background-image: url(https://media.giphy.com/media/l41lO0QvEQ8kjaIko/giphy.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .colourmod{
   text-shadow:0.5vw 0.5vw 0.5vw #FD04D7;
