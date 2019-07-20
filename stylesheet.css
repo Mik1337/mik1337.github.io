@@ -37,7 +37,7 @@ figure {
   transform:translate(-50%,-50%);
   -ms-transform:translate(-50%,-50%)
 }
-.parallax1, .parallax2, .parallax3, .parallax4, .parallax2point5 {
+.parallax1, .parallax2, .parallax3, .parallax4, .parallax2point5. .parralaz1, .parralaz2 {
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -49,6 +49,14 @@ figure {
 .parallax1{
   /* Student of IM  */
   background-image: url(https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+  vertical-align: middle;
+}
+.parralaz1 {
+  background-image: url();
+  vertical-align: middle;
+}
+.parralaz2 {
+  background-color: hotpink;
   vertical-align: middle;
 }
 .parallax2 {
