@@ -14,7 +14,8 @@ figure {
 }
 @media only screen and (max-width: 600px) {
     body {
-      background-size: cover;
+      background-position: center;
+      background-repeat: repeat;
     }
     figure {
       width: 100vw;
