@@ -1,7 +1,7 @@
 body {
   padding-top: 50px;
   background-image: url(https://media.giphy.com/media/Vs4EbNX0IChNe/giphy.gif);
-  background-color: black;
+  background-color: black !important;
   background-size: contain;
   background-repeat: no-repeat;
   justify-content: center
@@ -11,6 +11,14 @@ body {
 figure {
   display: block;
   width: 50vw;
+}
+.highlight {
+    background: rgba(255, 230, 0, 0.5);
+    padding: 3px 5px;
+    margin: -3px -5px;
+    line-height: 1.7;
+    border-radius: 5px;
+    display:inline;
 }
 @media only screen and (max-width: 600px) {
     body {
@@ -53,7 +61,7 @@ figure {
   vertical-align: middle;
 }
 .parralaz1 {
-  background-image: url();
+  /* background-image: url(); */
   vertical-align: middle;
 }
 .parralaz2 {
@@ -63,11 +71,15 @@ figure {
 .parallax2 {
   /* Nyander promo */
   background-image: url(https://media.giphy.com/media/zYQyUBXhM9RhS/giphy.gif);
+  background-size: cover;
+  background-position: center;
 }
 .parallax2point5 {
   /* wakatime */
   padding-top: 25px;
   background-image: url(https://media.giphy.com/media/d3MKIfI3JJPtCjba/giphy.gif);
+  background-size: cover;
+  background-position: center;
   /* style=position: absolute; */
 }
 .parallax3 {
