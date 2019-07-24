@@ -28,6 +28,9 @@ figure {
     figure {
       width: 100vw;
     }
+    .bluehaze-image {
+      width: 100vw;
+    }
 }
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
