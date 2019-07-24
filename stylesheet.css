@@ -46,7 +46,7 @@ figure {
   transform:translate(-50%,-50%);
   -ms-transform:translate(-50%,-50%)
 }
-.parallax1, .parallax2, .parallax3, .parallax4, .parallax2point5. .parralaz1, .parralaz2 {
+.biosphere, .nyander, .hitmeup, .bluehaze, .wakatime. .construction, .thotdynamiks {
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -55,26 +55,33 @@ figure {
   background-position: center;
   background-repeat: no-repeat;
 }
-.parallax1{
+.bluehaze {
+  /* Student of IM  */
+  background-image: url(https://media.giphy.com/media/kHwnICkqQh5RIydbEU/giphy.gif);
+  /* background-repeat: space !important; */
+  background-size: cover;
+  background-position: center;
+}
+.biosphere {
   /* Student of IM  */
   background-image: url(https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+  background-size: cover;
+  background-position: center;
+}
+.construction {
   vertical-align: middle;
 }
-.parralaz1 {
-  /* background-image: url(); */
-  vertical-align: middle;
-}
-.parralaz2 {
+.thotdynamiks {
   background-image: url(https://media.giphy.com/media/xUOwGggqGjv0yQfUgU/giphy.gif);
   vertical-align: middle;
 }
-.parallax2 {
+.nyander {
   /* Nyander promo */
   background-image: url(https://media.giphy.com/media/zYQyUBXhM9RhS/giphy.gif);
   background-size: cover;
   background-position: center;
 }
-.parallax2point5 {
+.wakatime {
   /* wakatime */
   padding-top: 25px;
   background-image: url(https://media.giphy.com/media/d3MKIfI3JJPtCjba/giphy.gif);
@@ -82,7 +89,7 @@ figure {
   background-position: center;
   /* style=position: absolute; */
 }
-.parallax3 {
+.hitmeup {
   /*  @me if you wanna skeet me */
   background-image: url(https://media.giphy.com/media/l41lO0QvEQ8kjaIko/giphy.gif);
   background-size: cover;
