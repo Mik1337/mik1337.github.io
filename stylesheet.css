@@ -30,6 +30,21 @@ figure {
     .bluehaze-image {
       width: 100vw;
     }
+    .four-naught-four {
+      overflow: hidden;
+      background-image: url(https://media.giphy.com/media/IblcVM0Sl2hr3hD0Sd/giphy.gif) repeat-x !important;
+      height: 100px;
+      width: 1000px;
+      animation: slide 10s linear infinite;
+    }
+    @keyframes slide{
+      0%{
+        transform: translate3d(-1, 0, 0);
+      }
+      100%{
+        transform: translate3d(-650px, 0, 0);
+      }
+    }
 }
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
