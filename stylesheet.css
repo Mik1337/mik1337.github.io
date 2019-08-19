@@ -63,7 +63,7 @@ figure {
   transform:translate(-50%,-50%);
   -ms-transform:translate(-50%,-50%)
 }
-.homeboy, .biosphere, .nyander, .hitmeup, .bluehaze, .wakatime. .construction, .thotdynamiks, .four-naught-four {
+.homeboy, .biosphere, .nyander, .hitmeup, .bluehaze, .wakatime. .construction, .thotdynamiks, .four-naught-four, .instagram {
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -71,6 +71,11 @@ figure {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+}
+.instagram {
+  background-image: url(https://media.giphy.com/media/kcy4GyN8JQihT4JtqP/giphy.gif);
+  background-size: cover;
+  background-position: center;
 }
 .homeboy {
   background-image: url(https://media.giphy.com/media/Vs4EbNX0IChNe/giphy.gif);
@@ -121,6 +126,16 @@ figure {
   background-image: url(https://media.giphy.com/media/l41lO0QvEQ8kjaIko/giphy.gif);
   background-size: cover;
   background-position: center;
+}
+.blur {
+  text-shadow:0.1vw 0.1vw 0.1vw #FD04D7;
+  font-weight:normal;
+  font-style:italic;
+  font-weight:700;
+  text-transform:uppercase;
+  text-align:center;
+  font-family:'Fira Sans Condensed', sans-serif;
+  margin: 10;
 }
 .colourmod{
   text-shadow:0.5vw 0.5vw 0.5vw #FD04D7;
