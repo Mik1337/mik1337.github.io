@@ -46,6 +46,14 @@ figure {
       }
     }
 }
+@keyframes slide {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(0, 1000px, 0);
+  }
+}
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -73,10 +81,13 @@ figure {
   background-repeat: no-repeat;
 }
 .instagram {
-  background-image: url(https://media.giphy.com/media/l3DdITNHAnh4MEYJG/giphy.gif);
+  background-image: url(https://cdn.dribbble.com/users/738356/screenshots/2715053/instagram-gradient-3.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.sneaky {
+  display: None;
 }
 .homeboy {
   background-image: url(https://media.giphy.com/media/Vs4EbNX0IChNe/giphy.gif);
@@ -129,7 +140,12 @@ figure {
   background-position: center;
 }
 .blur {
-  text-shadow:0.1vw 0.1vw 0.1vw #FD04D7;
+  background-image: -webkit-linear-gradient(#FD04D7, #40E0D0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position:relative;
+  text-shadow: 0.1vw 0.1vw 0.1vw white !important;
+
   font-weight:normal;
   font-style:italic;
   font-weight:700;
@@ -138,7 +154,16 @@ figure {
   font-family:'Fira Sans Condensed', sans-serif;
   margin: 10;
 }
-.colourmod{
+.blur:after {
+  background: none;
+  content: attr(data-text);
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  color: white  !important;
+}
+.colourmod {
   text-shadow:0.5vw 0.5vw 0.5vw #FD04D7;
   font-weight:normal;
   font-style:italic;
