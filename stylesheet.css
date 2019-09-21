@@ -11,6 +11,25 @@ figure {
   display: block;
   width: 50vw;
 }
+.nav-link {
+  animation: bgColor 10s infinite linear;
+}
+@keyframes bgColor {
+  0% {
+    color: lightpink;
+  }
+  25% {
+    color: lightblue;
+  }
+  50% {
+    color: turquoise;
+  }
+  75% {
+    color: lightblue;
+  }
+  100% {
+    color: lightpink;
+  }
 .highlight {
     background: rgba(255, 230, 0, 0.5);
     padding: 3px 5px;
