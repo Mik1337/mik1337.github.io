@@ -50,7 +50,9 @@ figure {
     transform: rotate( 360deg ) scale( 1 );
   }
 }
-
+i:hover {
+   animation: spinright 5s infinite;
+}
 .spinmerightaround {
   animation: spinright 2s 3s infinite;
 }
