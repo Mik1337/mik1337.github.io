@@ -39,6 +39,22 @@ figure {
     border-radius: 5px;
     display:inline;
 }
+@keyframes spinright {
+  0% {
+  transform: rotate( 0deg ) scale( 1 );
+  }
+  50% {
+    transform: rotate( 180deg ) scale( 1.35 );
+  }
+  100% {
+    transform: rotate( 360deg ) scale( 1 );
+  }
+}
+
+.spinmerightaround {
+  animation: spinright 2s 3s infinite;
+}
+
 @media only screen and (max-width: 600px) {
     body {
       background-position: center;
