@@ -157,7 +157,7 @@ figure {
 .awwww {
   /* awwww */
   padding-top: 25px;
-  background-image: url(https://media.giphy.com/media/CCdJYNYqgtHoI/giphy.gif);
+  background-image: url(https://media.giphy.com/media/l0HlFIiE7rbmeklZC/giphy.gif);
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -224,7 +224,10 @@ figure {
 .image {
   border-radius: 30px;
   width: 30vw;
-  border-color: red;
+  transition: all .23s ease-in-out;
+}
+.image:hover {
+  transform: scale(1.1);
 }
 .rotato {
   -ms-transform: rotate(-7deg); /* IE 9 */
