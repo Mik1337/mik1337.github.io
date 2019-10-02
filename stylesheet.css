@@ -57,33 +57,6 @@ figure {
   animation: spinright 5s infinite;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-position: center;
-      background-repeat: repeat;
-    }
-    figure {
-      width: 100vw;
-    }
-    .bluehaze-image {
-      width: 100vw;
-    }
-    .four-naught-four {
-      overflow: hidden;
-      background-image: url(https://media.giphy.com/media/IblcVM0Sl2hr3hD0Sd/giphy.gif) repeat-x !important;
-      height: 100px;
-      width: 1000px;
-      animation: slide 10s linear infinite;
-    }
-    @keyframes slide{
-      0%{
-        transform: translate3d(-1, 0, 0);
-      }
-      100%{
-        transform: translate3d(-650px, 0, 0);
-      }
-    }
-}
 @keyframes slide {
   0%{
     transform: translate3d(0, 0, 0);
@@ -228,9 +201,10 @@ figure {
 }
 .image {
   border-radius: 30px;
+  width: 30vw;
   border-color: red;
 }
-.rotato {
+.rotato, .rotato-right {
   -ms-transform: rotate(-7deg); /* IE 9 */
   -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
   transform: rotate(-7deg);
@@ -248,4 +222,39 @@ figure {
 .iconspacing {
   margin-left: 1vw;
   margin-right: 1vw;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-position: center;
+      background-repeat: repeat;
+    }
+    figure {
+      width: 100vw;
+    }
+    .bluehaze-image {
+      width: 100vw;
+    }
+    .four-naught-four {
+      overflow: hidden;
+      background-image: url(https://media.giphy.com/media/IblcVM0Sl2hr3hD0Sd/giphy.gif) repeat-x !important;
+      height: 100px;
+      width: 1000px;
+      animation: slide 10s linear infinite;
+    }
+    .image {
+      width: 100vw;
+    }
+    .rotato-right, .rotato-left {
+      -ms-transform: rotate(0deg); /* IE 9 */
+      -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+      transform: rotate(0deg);
+    }
+    @keyframes slide{
+      0%{
+        transform: translate3d(-1, 0, 0);
+      }
+      100%{
+        transform: translate3d(-650px, 0, 0);
+      }
+    }
 }
