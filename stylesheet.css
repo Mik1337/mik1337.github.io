@@ -204,12 +204,22 @@ figure {
   width: 30vw;
   border-color: red;
 }
-.rotato, .rotato-right {
+.rotato {
   -ms-transform: rotate(-7deg); /* IE 9 */
   -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
   transform: rotate(-7deg);
 }
-.rotato-left {
+.first-rotation {
+  -ms-transform: rotate(-7deg); /* IE 9 */
+  -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+  transform: rotate(-7deg);
+}
+.second-rotation {
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+.third-rotation {
   -ms-transform: rotate(7deg); /* IE 9 */
   -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
   transform: rotate(7deg);
@@ -244,11 +254,14 @@ figure {
     .image {
       width: 100vw;
     }
-    .rotato-right, .rotato-left {
+    .first-rotation, .second-rotation, .third-rotation {
       -ms-transform: rotate(0deg); /* IE 9 */
       -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
       transform: rotate(0deg);
     }
+    #sunlight { order: 2; }
+    #vangogh { order: 1; }
+    #pickup { order: 3; }
     @keyframes slide{
       0%{
         transform: translate3d(-1, 0, 0);
