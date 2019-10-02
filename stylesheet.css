@@ -82,46 +82,56 @@ figure {
   transform:translate(-50%,-50%);
   -ms-transform:translate(-50%,-50%)
 }
-.homeboy, .biosphere, .nyander, .hitmeup, .bluehaze, .awwww. .construction, .thotdynamiks, .four-naught-four, .instagram {
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-/* Create the parallax scrolling effect */
+.instagram {
+  /* background image */
+  background-image: url(https://cdn.dribbble.com/users/738356/screenshots/2715053/instagram-gradient-3.gif);
+  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-}
-.instagram {
-  background-image: url(https://cdn.dribbble.com/users/738356/screenshots/2715053/instagram-gradient-3.gif);
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 .sneaky {
   display: None;
 }
 .homeboy {
+  /* window size */
+  width: 100%;
+  height: 100vh;
+  /* background image */
   background-image: url(https://media.giphy.com/media/Vs4EbNX0IChNe/giphy.gif);
-  background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bluehaze {
   /* Student of IM  */
   background-image: url(https://media.giphy.com/media/kHwnICkqQh5RIydbEU/giphy.gif);
-  /* background-repeat: space !important; */
-  background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .biosphere {
   /* Student of IM  */
   background-image: url(https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
-  background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .four-naught-four {
+    /* background image */
     background-image: url(https://media.giphy.com/media/IblcVM0Sl2hr3hD0Sd/giphy.gif) !important;
-    background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .construction {
   vertical-align: middle;
@@ -129,25 +139,37 @@ figure {
 .thotdynamiks {
   background-image: url(https://media.giphy.com/media/xUOwGggqGjv0yQfUgU/giphy.gif);
   vertical-align: middle;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .nyander {
   /* Nyander promo */
   background-image: url(https://media.giphy.com/media/zYQyUBXhM9RhS/giphy.gif);
-  background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .awwww {
   /* awwww */
   padding-top: 25px;
-  background-image: url(https://media.giphy.com/media/xT0BKlwFe56YrxJUEE/giphy.gif);
+  background-image: url(https://media.giphy.com/media/CCdJYNYqgtHoI/giphy.gif);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
   /* style=position: absolute; */
 }
 .hitmeup {
   /*  @me if you wanna skeet me */
   background-image: url(https://media.giphy.com/media/l41lO0QvEQ8kjaIko/giphy.gif);
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
 }
 .blur {
@@ -209,21 +231,6 @@ figure {
   -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
   transform: rotate(-7deg);
 }
-.first-rotation {
-  -ms-transform: rotate(-7deg); /* IE 9 */
-  -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
-  transform: rotate(-7deg);
-}
-.second-rotation {
-  -ms-transform: rotate(0deg); /* IE 9 */
-  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-  transform: rotate(0deg);
-}
-.third-rotation {
-  -ms-transform: rotate(7deg); /* IE 9 */
-  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-  transform: rotate(7deg);
-}
 .responsive-container {
     position: relative;
     width: 100%;
@@ -254,10 +261,8 @@ figure {
     .image {
       width: 100vw;
     }
-    .first-rotation, .second-rotation, .third-rotation {
-      -ms-transform: rotate(0deg); /* IE 9 */
-      -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-      transform: rotate(0deg);
+    .bottom-pad {
+      margin-bottom: 15px;
     }
     #sunlight { order: 2; }
     #vangogh { order: 1; }
