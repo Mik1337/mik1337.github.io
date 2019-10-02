@@ -50,7 +50,7 @@ figure {
     transform: rotate( 360deg ) scale( 1 );
   }
 }
-i:hover {
+.fab:hover {
    animation: spinright 5s infinite;
 }
 .navbar-brand:hover {
@@ -109,7 +109,7 @@ i:hover {
   transform:translate(-50%,-50%);
   -ms-transform:translate(-50%,-50%)
 }
-.homeboy, .biosphere, .nyander, .hitmeup, .bluehaze, .wakatime. .construction, .thotdynamiks, .four-naught-four, .instagram {
+.homeboy, .biosphere, .nyander, .hitmeup, .bluehaze, .awwww. .construction, .thotdynamiks, .four-naught-four, .instagram {
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -163,12 +163,12 @@ i:hover {
   background-size: cover;
   background-position: center;
 }
-.wakatime {
-  /* wakatime */
+.awwww {
+  /* awwww */
   padding-top: 25px;
-  background-image: url(https://media.giphy.com/media/UUnB8mey00zHYWd2ED/giphy.gif);
+  background-image: url(https://media.giphy.com/media/xT0BKlwFe56YrxJUEE/giphy.gif);
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   /* style=position: absolute; */
 }
 .hitmeup {
@@ -226,10 +226,19 @@ i:hover {
   font-size:2vw;
   line-height: 3vw;
 }
+.image {
+  border-radius: 30px;
+  border-color: red;
+}
 .rotato {
   -ms-transform: rotate(-7deg); /* IE 9 */
   -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
   transform: rotate(-7deg);
+}
+.rotato-left {
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
 }
 .responsive-container {
     position: relative;
