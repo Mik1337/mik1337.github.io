@@ -50,7 +50,7 @@ figure {
     transform: rotate( 360deg ) scale( 1 );
   }
 }
-.fab:hover {
+.colourmod.fab:hover {
    animation: spinright 5s infinite;
 }
 .navbar-brand:hover {
