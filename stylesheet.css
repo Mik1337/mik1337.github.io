@@ -19,13 +19,13 @@ figure {
     color: lightpink;
   }
   25% {
-    color: lightblue;
+    color: #FFA6C9;
   }
   50% {
-    color: turquoise;
+    color: pink;
   }
   75% {
-    color: lightblue;
+    color: #FFA6C9;
   }
   100% {
     color: lightpink;
@@ -50,7 +50,7 @@ figure {
     transform: rotate( 360deg ) scale( 1 );
   }
 }
-.colourmod.fab:hover {
+.colourmod.fab:hover, .colourmod.fas:hover {
    animation: spinright 5s infinite;
 }
 .navbar-brand:hover {
@@ -243,6 +243,28 @@ figure {
   margin-left: 1vw;
   margin-right: 1vw;
 }
+.footer {
+  /* background-image: url(http://giphygifs.s3.amazonaws.com/media/2Fazad9Hs5xPAF6iQ/giphy.gif); */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* font and stuff */
+  color: lightgray;
+  /* Fallback */
+  background-color: #2a3746 !important;
+}
+.footer a {
+  color: lightpink;
+}
+.footer a:hover {
+  color: hotpink;
+  font-size: 110%;
+}
+.footer a:visited {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 600px) {
     body {
       background-position: center;
