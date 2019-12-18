@@ -3,7 +3,7 @@ body {
   background-color: black !important;
   background-size: contain;
   background-repeat: no-repeat;
-  justify-content: center
+  justify-content: center;
   align-items: center;
   scroll-behavior: smooth;
 }
@@ -19,54 +19,55 @@ figure {
     color: lightpink;
   }
   25% {
-    color: #FFA6C9;
+    color: #ffa6c9;
   }
   50% {
     color: pink;
   }
   75% {
-    color: #FFA6C9;
+    color: #ffa6c9;
   }
   100% {
     color: lightpink;
   }
 }
 .highlight {
-    background: rgba(255, 230, 0, 0.5);
-    padding: 3px 5px;
-    margin: -3px -5px;
-    line-height: 1.7;
-    border-radius: 5px;
-    display:inline;
+  background: rgba(255, 230, 0, 0.5);
+  padding: 3px 5px;
+  margin: -3px -5px;
+  line-height: 1.7;
+  border-radius: 5px;
+  display: inline;
 }
 @keyframes spinright {
   0% {
-  transform: rotate( 0deg ) scale( 1 );
+    transform: rotate(0deg) scale(1);
   }
   50% {
-    transform: rotate( 180deg ) scale( 1.35 );
+    transform: rotate(180deg) scale(1.35);
   }
   100% {
-    transform: rotate( 360deg ) scale( 1 );
+    transform: rotate(360deg) scale(1);
   }
 }
-.colourmod.fab:hover, .colourmod.fas:hover {
-   animation: spinright 5s infinite;
+.colourmod.fab:hover,
+.colourmod.fas:hover {
+  animation: spinright 5s infinite;
 }
 .navbar-brand:hover {
   animation: spinright 5s infinite;
 }
 
 @keyframes slide {
-  0%{
+  0% {
     transform: translate3d(0, 0, 0);
   }
-  100%{
+  100% {
     transform: translate3d(0, 1000px, 0);
   }
 }
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
   display: flex;
   text-align: center;
@@ -76,11 +77,11 @@ figure {
   align-items: center;
 }
 .display-middle {
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  -ms-transform:translate(-50%,-50%)
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 .instagram {
   /* background image */
@@ -125,13 +126,13 @@ figure {
   background-size: cover;
 }
 .four-naught-four {
-    /* background image */
-    background-image: url(https://media.giphy.com/media/IblcVM0Sl2hr3hD0Sd/giphy.gif) !important;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* background image */
+  background-image: url(https://media.giphy.com/media/IblcVM0Sl2hr3hD0Sd/giphy.gif) !important;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .construction {
   vertical-align: middle;
@@ -173,18 +174,18 @@ figure {
   background-position: center;
 }
 .blur {
-  background-image: -webkit-linear-gradient(#FD04D7, #40E0D0);
+  background-image: -webkit-linear-gradient(#fd04d7, #40e0d0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position:relative;
+  position: relative;
   text-shadow: 0.1vw 0.1vw 0.1vw white !important;
 
-  font-weight:normal;
-  font-style:italic;
-  font-weight:700;
-  text-transform:uppercase;
-  text-align:center;
-  font-family:'Fira Sans Condensed', sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Fira Sans Condensed", sans-serif;
   margin: 10;
 }
 .blur:after {
@@ -194,37 +195,37 @@ figure {
   position: absolute;
   top: 0;
   z-index: -1;
-  color: white  !important;
+  color: white !important;
 }
 .colourmod {
-  text-shadow:0.5vw 0.5vw 0.5vw #FD04D7;
-  font-weight:normal;
-  font-style:italic;
-  font-weight:700;
-  text-transform:uppercase;
-  text-align:center;
-  font-family:'Fira Sans Condensed', sans-serif;
+  text-shadow: 0.5vw 0.5vw 0.5vw #fd04d7;
+  font-weight: normal;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Fira Sans Condensed", sans-serif;
   margin: 10;
 }
 .bigbig {
-  color:#ddd;
-  font-size:12vw;
+  color: #ddd;
+  font-size: 12vw;
   line-height: 12vw;
 }
 .big {
-  color:#eee;
-  font-size:4vw;
+  color: #eee;
+  font-size: 4vw;
   line-height: 4vw;
 }
 .small {
-  color:#fff;
-  font-size:2vw;
+  color: #fff;
+  font-size: 2vw;
   line-height: 3vw;
 }
 .image {
   border-radius: 30px;
   width: 30vw;
-  transition: all .23s ease-in-out;
+  transition: all 0.23s ease-in-out;
 }
 .image:hover {
   transform: scale(1.1);
@@ -235,9 +236,9 @@ figure {
   transform: rotate(-7deg);
 }
 .responsive-container {
-    position: relative;
-    width: 100%;
-    border: 1px solid black;
+  position: relative;
+  width: 100%;
+  border: 1px solid black;
 }
 .iconspacing {
   margin-left: 1vw;
@@ -266,38 +267,45 @@ figure {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-      background-position: center;
-      background-repeat: repeat;
+  body {
+    background-position: center;
+    background-repeat: repeat;
+  }
+  figure {
+    width: 100vw;
+  }
+  .bluehaze-image {
+    width: 100vw;
+  }
+  .four-naught-four {
+    overflow: hidden;
+    background-image: url(https://media.giphy.com/media/IblcVM0Sl2hr3hD0Sd/giphy.gif)
+      repeat-x !important;
+    height: 100px;
+    width: 1000px;
+    animation: slide 10s linear infinite;
+  }
+  .image {
+    width: 100vw;
+  }
+  .bottom-pad {
+    margin-bottom: 15px;
+  }
+  #sunlight {
+    order: 2;
+  }
+  #vangogh {
+    order: 1;
+  }
+  #pickup {
+    order: 3;
+  }
+  @keyframes slide {
+    0% {
+      transform: translate3d(-1, 0, 0);
     }
-    figure {
-      width: 100vw;
+    100% {
+      transform: translate3d(-650px, 0, 0);
     }
-    .bluehaze-image {
-      width: 100vw;
-    }
-    .four-naught-four {
-      overflow: hidden;
-      background-image: url(https://media.giphy.com/media/IblcVM0Sl2hr3hD0Sd/giphy.gif) repeat-x !important;
-      height: 100px;
-      width: 1000px;
-      animation: slide 10s linear infinite;
-    }
-    .image {
-      width: 100vw;
-    }
-    .bottom-pad {
-      margin-bottom: 15px;
-    }
-    #sunlight { order: 2; }
-    #vangogh { order: 1; }
-    #pickup { order: 3; }
-    @keyframes slide{
-      0%{
-        transform: translate3d(-1, 0, 0);
-      }
-      100%{
-        transform: translate3d(-650px, 0, 0);
-      }
-    }
+  }
 }
