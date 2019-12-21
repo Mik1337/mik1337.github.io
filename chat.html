@@ -113,29 +113,74 @@
       </div>
     </nav>
     <br />
-    <div id="awwww" class="awwww container-fluid">
+    <div class="mik-messenger container-fluid">
       <p class="colourmod bigbig">SEND A MESSAGE</p>
       <p class="blur big">A secret anonymous message ;)</p>
       <br />
-      <!-- <form action="http://localhost:3000/chat" method="POST"> -->
-      <form action="https://mik-messenger.herokuapp.com/chat" method="POST">
-        <div>
-          <input
-            type="text"
-            placeholder="You're awesome"
-            name="message"
-            id="message"
-          />
-          <button class="btn btn-primary">
-            send
-          </button>
+      <!-- <form
+        action="http://localhost:3000/chat"
+        class="form-fields"
+        method="POST"
+      > -->
+      <form
+        action="https://mik-messenger.herokuapp.com/chat"
+        class="form-fields"
+        method="POST"
+      >
+        <div class="row input-fields">
+          <div class="form-group col-xs-4" style="padding-right: 1em">
+            <div class="d-flex flex-column">
+              <label for="name" class="colourmod big control-label">
+                Name
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Mik"
+                name="name"
+                id="name"
+              />
+            </div>
+          </div>
+          <div class="form-group col-xs-4" style="padding-right: 1em">
+            <div class="d-flex flex-column">
+              <label for="name" class="colourmod big control-label">
+                Message
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="You're awesome"
+                name="message"
+                id="message"
+              />
+            </div>
+          </div>
+
+          <div class="form-group col-xs-4" style="padding-right: 1em">
+            <div class="d-flex flex-column">
+              <label for="name" class="colourmod big control-label">
+                Instagram
+              </label>
+              <input
+                type="text"
+                placeholder="@username"
+                name="instagram"
+                id="instagram"
+              />
+            </div>
+          </div>
+          <div class="form-fields">
+            <button class="btn btn-primary col-xl-4">
+              send
+            </button>
+          </div>
         </div>
       </form>
-
       <p class="colourmod big">--------------------------</p>
     </div>
 
-    <div class="awwww container-fluid">
+    <div class="my-messages container-fluid">
       <p class="colourmod bigbig">Here's some</p>
       <div id="plswork"></div>
 

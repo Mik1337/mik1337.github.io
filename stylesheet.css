@@ -83,9 +83,10 @@ figure {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-.instagram {
+.mik-messenger {
+  padding-top: 25px;
   /* background image */
-  background-image: url(https://cdn.dribbble.com/users/738356/screenshots/2715053/instagram-gradient-3.gif);
+  background-image: url(https://media.giphy.com/media/UTvuwR7Zyn25CJZri0/giphy-downsized-large.gif);
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -173,6 +174,14 @@ figure {
   background-attachment: fixed;
   background-position: center;
 }
+.my-messages {
+  /* Nyander promo */
+  background-image: url(https://media.giphy.com/media/26ufplp8yheSKUE00/giphy.gif);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
 .blur {
   background-image: -webkit-linear-gradient(#fd04d7, #40e0d0);
   -webkit-background-clip: text;
@@ -265,7 +274,16 @@ figure {
 .footer a:visited {
   text-decoration: underline;
 }
-
+.form-fields {
+  padding-left: 20vw;
+  width: 80vw;
+  }
+.input-fields {
+  padding-bottom: 1vw;
+  padding-left: 3vw;
+  border-radius: 30px;
+  border: 2px solid black;
+}
 @media only screen and (max-width: 600px) {
   body {
     background-position: center;
