@@ -289,7 +289,7 @@ figure {
   border: 2px solid black;
 }
 .button-handler {
-  margin:0 21vw;
+  margin: 0 21vw;
 }
 @media only screen and (max-width: 600px) {
   body {
@@ -338,6 +338,6 @@ figure {
     max-width: 66vw;
   }
   .button-handler {
-    margin:0 auto;
+    margin: 0 auto;
   }
 }
