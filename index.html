@@ -71,10 +71,10 @@
             <a class="nav-link" href="#bio">BIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#nekko">NYAN</a>
+            <a class="nav-link" href="#awwww">#AWWWW</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#awwww">#AWWWW</a>
+            <a class="nav-link" href="#chat">SAY@ME</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#skeet">@SKEET</a>
@@ -161,17 +161,6 @@
         </p>
       </div>
 
-      <div id="nekko" class="nyander vertical-center">
-        <p class="colourmod bigbig">
-          <a href="https://nyander.herokuapp.com/">NYANDER</a>
-        </p>
-        <p class="colourmod big">
-          Check out <a href="https://nyander.herokuapp.com/">nyander</a> the
-          Nyan Tinder if y'all wanna see an endless loop of the cute cuddle
-          death machines
-        </p>
-      </div>
-
       <div id="awwww" class="awwww container-fluid">
         <p class="colourmod bigbig">My slice of life</p>
         <p class="blur big">Here's what people have to say about me :3</p>
@@ -199,6 +188,75 @@
         </a>
         <br />
         <p class="colourmod big">--------------------------</p>
+      </div>
+
+      <div id="chat" class="mik-messenger vertical-center">
+        <div class="container-fluid">
+          <p class="colourmod bigbig">SEND A MESSAGE</p>
+          <p class="blur big">A secret anonymous message ;)</p>
+          <br />
+          <!-- <form
+            action="http://localhost:3000/chat"
+            class="form-fields"
+            method="POST"
+          > -->
+          <form
+            action="https://mik-messenger.herokuapp.com/chat"
+            class="form-fields"
+            method="POST"
+          >
+            <div class="row input-fields">
+              <div class="form-group col-xs-2" style="padding-right: 1em">
+                <div class="d-flex flex-column" title="optional">
+                  <label for="name" class="colourmod big control-label">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Mik"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+              </div>
+              <div class="form-group col-xs-2" style="padding-right: 1em">
+                <div class="d-flex flex-column" title="mandilorian">
+                  <label for="name" class="colourmod big control-label">
+                    Message
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="You're awesome"
+                    name="message"
+                    id="message"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group col-xs-1 ig-handler">
+                <div class="d-flex flex-column" title="optional">
+                  <label for="name" class="colourmod big control-label">
+                    Instagram
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="@username"
+                    name="instagram"
+                    id="instagram"
+                  />
+                </div>
+              </div>
+              <div class="button-handler">
+                <button class="btn btn-primary col-xs-2">
+                  send message ;)
+                </button>
+              </div>
+            </div>
+          </form>
+          <p class="colourmod big">--------------------------</p>
+        </div>
       </div>
 
       <div id="skeet" class="hitmeup vertical-center">
