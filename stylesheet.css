@@ -288,6 +288,9 @@ figure {
   border-radius: 30px;
   border: 2px solid black;
 }
+.button-handler {
+  margin:0 21vw;
+}
 @media only screen and (max-width: 600px) {
   body {
     background-position: center;
@@ -333,5 +336,8 @@ figure {
   .ig-handler {
     padding-right: 1em;
     max-width: 66vw;
+  }
+  .button-handler {
+    margin:0 auto;
   }
 }
