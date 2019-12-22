@@ -181,7 +181,8 @@ figure {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;}
+  background-size: cover;
+}
 .blur {
   background-image: -webkit-linear-gradient(#fd04d7, #40e0d0);
   -webkit-background-clip: text;
@@ -277,7 +278,10 @@ figure {
 .form-fields {
   padding-left: 20vw;
   width: 80vw;
-  }
+}
+.ig-handler {
+  padding-right: 1em;
+}
 .input-fields {
   padding-bottom: 1vw;
   padding-left: 3vw;
@@ -325,5 +329,9 @@ figure {
     100% {
       transform: translate3d(-650px, 0, 0);
     }
+  }
+  .ig-handler {
+    padding-right: 1em;
+    max-width: 66vw;
   }
 }
