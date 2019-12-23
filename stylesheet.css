@@ -301,6 +301,10 @@ figure {
   -webkit-backdrop-filter: blur(5px) !important;
   backdrop-filter: blur(5px) !important  ;
 }
+.bg-blur {
+  -webkit-backdrop-filter: blur(5px) !important;
+  backdrop-filter: blur(5px) !important  ;
+}
 @media only screen and (max-width: 600px) {
   body {
     background-position: center;
