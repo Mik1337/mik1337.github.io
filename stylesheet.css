@@ -286,10 +286,20 @@ figure {
   padding-bottom: 1vw;
   padding-left: 3vw;
   border-radius: 30px;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
 }
 .button-handler {
   margin: 0 21vw;
+}
+.bg-mik {
+  background-color: rgba(52, 58, 64, 0.897) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(20px) !important  ;
+}
+.bg-primary-mik {
+  background-color: rgba(0, 123, 255, 0.897) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(20px) !important  ;
 }
 @media only screen and (max-width: 600px) {
   body {

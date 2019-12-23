@@ -43,7 +43,7 @@
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <nav
-      class="navbar navbar-expand-md bg-dark navbar-dark container-fluid fixed-top"
+      class="navbar navbar-expand-md bg-mik container-fluid fixed-top"
     >
       <a class="navbar-brand" href="https://mik1337.github.io/"
         ><img
@@ -182,11 +182,11 @@
 
     <div class="my-messages container-fluid">
       <p class="colourmod bigbig">Here's some</p>
-      <div id="plswork"></div>
+      <div class="row" id="plswork"></div>
 
       <script>
-        fetch("https://mik-messenger.herokuapp.com/messages", {
-          // fetch("http://localhost:3000/messages", {
+        // fetch("https://mik-messenger.herokuapp.com/messages", {
+        fetch("http://localhost:3000/messages", {
           credentials: "omit",
           method: "GET",
           mode: "cors"
@@ -200,17 +200,17 @@
             document.getElementById("plswork").insertAdjacentHTML(
               "beforeend",
               `
-                <div
-                 class="card text-white bg-primary mb-3"
-                 style="max-width: 18rem;"
-                >
-                <div class="card-header">${item.name}</div>
-                  <div class="card-body">
-                  <p class="card-text">
-                    ${item.message}
-                  </p>
-                 </div>
-                </div>`
+                <div class="col-md-4">
+                  <div class="card text-white bg-primary-mik mb-3" style="max-width: 18rem;">
+                    <div class="card-header smol">${item.name}</div>
+                    <div class="card-body">
+                      <p class="card-text smol">
+                        ${item.message}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              `
             )
           );
         }
