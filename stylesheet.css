@@ -308,10 +308,10 @@ figure {
   backdrop-filter: blur(5px) !important  ;
 }
 @media only screen and (max-width: 600px) {
-  body {
+  /* body {
     background-position: center;
     background-repeat: repeat;
-  }
+  } */
   figure {
     width: 100vw;
   }
