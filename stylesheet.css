@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   /* padding-top: 50px; */
   background-color: black !important;
@@ -5,7 +8,6 @@ body {
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
-  scroll-behavior: smooth;
 }
 figure {
   display: block;
