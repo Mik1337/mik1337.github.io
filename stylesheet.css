@@ -328,9 +328,11 @@ figure {
   }
   .image {
     width: 100vw;
+    margin-bottom: 15px !important;
+    padding-bottom: 15px !important;
   }
   .bottom-pad {
-    margin-bottom: 15px;
+    /* display: none !important; */
   }
   #sunlight {
     order: 2;
