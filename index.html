@@ -76,9 +76,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#chat">SAY@ME</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#skeet">@SKEET</a>
-          </li>
+          </li> -->
           <!-- Dropdown -->
           <li class="nav-item dropdown">
             <a
@@ -157,7 +157,8 @@
         <p class="colourmod bigbig">HEWWO</p>
         <p class="colourmod big">
           I'm a full time student and part time sloth, studying to get a degree
-          in Industrial Management
+          in Industrial Management <br />
+          Intern @ Volvo CE
         </p>
       </div>
 
@@ -200,7 +201,7 @@
             class="form-fields"
             method="POST"
           > -->
-            <form
+          <form
             action="https://mik-messenger.herokuapp.com/chat"
             class="form-fields"
             method="POST"
@@ -259,20 +260,139 @@
         </div>
       </div>
 
-      <div id="skeet" class="hitmeup vertical-center">
-        <p class="colourmod bigbig">
-          <a
-            href="https://twitter.com/intent/tweet?screen_name=namikaze_mik&ref_src=twsrc%5Etfw"
-            >@me</a
+      <div
+        id="footer"
+        class="jumbotron text-center footer"
+        style="margin-bottom:0"
+      >
+        <div class="row text-center text-xl-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h3>___Self___</h3>
+            <ul class="list-unstyled quick-links">
+              <li>
+                <a href="#"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li>
+                <a href="#bio"><i class="far fa-address-card"></i> About Me</a>
+              </li>
+              <li id="here">
+                <a
+                  href="#here"
+                  data-toggle="popover"
+                  title="Im shy"
+                  data-content="email me @ mik23@protonmail.ch with deets"
+                >
+                  <i class="far fa-question-circle"></i> Hire Me</a
+                >
+              </li>
+              <li>
+                <a href="./construction.html"
+                  ><i class="fas fa-people-carry"></i> My Crazy Brain</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h3>__Projects__</h3>
+            <ul class="list-unstyled quick-links">
+              <li>
+                <a href="https://whack-a-key.herokuapp.com/"
+                  ><img src="https://i.imgur.com/3p80YDX.png" width="20px" />
+                  Whack a Key</a
+                >
+              </li>
+              <!-- <br /> -->
+              <li>
+                <a href="https://babe-yoda.herokuapp.com/"
+                  ><img src="https://i.imgur.com/m6W1lbA.png" width="20px" />
+                  Baby Yoda</a
+                >
+              </li>
+              <!-- <br /> -->
+              <li>
+                <a href="https://miks.incredible-digital.life/chat"
+                  ><img src="https://i.imgur.com/CmYcjAK.png" width="20px" />
+                  Mik Messenger</a
+                ><br />
+              </li>
+              <!-- <li>
+                <a href="https://fuckvtu.herokuapp.com/"
+                  ><i class="fas fa-bullseye"></i> GPA Calculator</a
+                >
+              </li> -->
+              <!-- <li>
+                <a href="./manifest.js"
+                  ><i class="fas fa-person-booth"></i> Manifest</a
+                >
+              </li> -->
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h3>__Branding__</h3>
+            <ul class="list-unstyled quick-links">
+              <li>
+                <a href="https://coolors.co/343a40-e9ecef-f3f3f3-e6e8ec-2a3746"
+                  ><i class="fas fa-swatchbook"></i> Colour Pallet</a
+                >
+              </li>
+              <li>
+                <!-- <a href="https://open.spotify.com/track/5EQzn8CEclXUd2pNidVRG5" -->
+                <a href="https://www.youtube.com/watch?v=0MykEJABbGc"
+                  ><i class="fas fa-headphones-alt"></i> Music</a
+                >
+              </li>
+              <li>
+                <a href="https://i.imgur.com/CmYcjAK.png"
+                  ><img
+                    src="https://i.imgur.com/CmYcjAK.png"
+                    width="25vw"
+                    height="25vh"
+                  />
+                  logo</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+            <ul class="list-unstyled list-inline social text-center">
+              <li class="list-inline-item">
+                <a href="https://github.com/Mik1337/"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:mik23@protonmail.ch" target="_"
+                  ><i class="fa fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white"
           >
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-          if thee wanna meet me
-        </p>
+            <p class="h6">
+              <a
+                href="https://github.com/Mik1337/"
+                title="Designed and developed by"
+                >Designed and developed by Mik1337</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </center>
   </body>
+  <script>
+    $(document).ready(function() {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
 </html>
