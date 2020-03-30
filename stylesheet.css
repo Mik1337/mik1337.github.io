@@ -257,7 +257,7 @@ figure {
   margin-right: 1vw;
 }
 .footer {
-  /* background-image: url(http://giphygifs.s3.amazonaws.com/media/2Fazad9Hs5xPAF6iQ/giphy.gif); */
+  background-image: url(https://media.giphy.com/media/GGooDHKI1mrE4/giphy.gif);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -296,16 +296,21 @@ figure {
 .bg-mik {
   background-color: rgba(52, 58, 64, 0.897) !important;
   -webkit-backdrop-filter: blur(5px) !important;
-  backdrop-filter: blur(5px) !important  ;
+  backdrop-filter: blur(5px) !important;
 }
 .bg-primary-mik {
   background-color: rgba(0, 123, 255, 0.897) !important;
   -webkit-backdrop-filter: blur(5px) !important;
-  backdrop-filter: blur(5px) !important  ;
+  backdrop-filter: blur(5px) !important;
 }
 .bg-blur {
   -webkit-backdrop-filter: blur(5px) !important;
-  backdrop-filter: blur(5px) !important  ;
+  backdrop-filter: blur(5px) !important;
+}
+.current-mood-hover {
+  color: hotpink;
+  width: 100%;
+  background-color: black;
 }
 @media only screen and (max-width: 600px) {
   /* body {
@@ -343,6 +348,7 @@ figure {
   #pickup {
     order: 3;
   }
+
   @keyframes slide {
     0% {
       transform: translate3d(-1, 0, 0);
