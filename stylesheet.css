@@ -1,3 +1,8 @@
+@font-face {
+  font-family: DriveThru;
+  src: url(./assests/fonts/DriveThru/DriveThru-24Ed.otf);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -70,7 +75,7 @@ figure {
 }
 .vertical-center {
   min-height: 100%; /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: 100vh; /* These two lines are counted as one */
   display: flex;
   text-align: center;
   justify-content: center;
@@ -120,7 +125,7 @@ figure {
   background-size: cover;
 }
 .biosphere {
-  /* Student of IM  */
+  /* Graduate of IE&M  */
   background-image: url(https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -234,12 +239,56 @@ figure {
   font-size: 2vw;
   line-height: 3vw;
 }
-.image {
+
+@keyframes blink {
+  69% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79% {
+    color: #333;
+  }
+  80% {
+    text-shadow: none;
+  }
+  81.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  82.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  94% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+.neon-signboard {
+  font-family: "DriveThru";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
+    0 0 0.1em #ff4444, 0 10px 3px #000;
+
+  /* display: none; */
+}
+.neon-signboard span {
+  animation: blink linear infinite 2s;
+}
+.awwww .image {
   border-radius: 30px;
   width: 30vw;
   transition: all 0.23s ease-in-out;
 }
-.image:hover {
+.awwww .image:hover {
   transform: scale(1.1);
 }
 .rotato {
@@ -266,6 +315,12 @@ figure {
   color: lightgray;
   /* Fallback */
   background-color: #2a3746 !important;
+}
+.biosphere a {
+  color: white;
+}
+.biosphere a:hover {
+  color: lightpink;
 }
 .footer a {
   color: lightpink;
@@ -331,7 +386,7 @@ figure {
     width: 1000px;
     animation: slide 10s linear infinite;
   }
-  .image {
+  .awwww .image {
     width: 100vw;
     margin-bottom: 15px !important;
     padding-bottom: 15px !important;
