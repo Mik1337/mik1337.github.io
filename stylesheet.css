@@ -102,7 +102,7 @@ figure {
 }
 .biosphere {
   /* Graduate of IE&M  */
-  background-image: url(./assests/space-gifphy.gif);
+  background-image: url(./assests/space-giphy.gif);
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -244,8 +244,8 @@ figure {
   border: 1px solid black;
 }
 .iconspacing {
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 .footer {
   background-image: url(./assests/noise-gifphy.gif);
