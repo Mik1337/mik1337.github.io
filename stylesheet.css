@@ -310,10 +310,16 @@ figure {
   background-color: black;
 }
 @media only screen and (max-width: 600px) {
-  /* body {
-    background-position: center;
-    background-repeat: repeat;
-  } */
+  .bigbig {
+    color: #ddd;
+    font-size: 10vw;
+    line-height: 8vw;
+  }
+  .big {
+    color: #eee;
+    font-size: 4vw;
+    line-height: 6vw;
+  }
   figure {
     width: 100vw;
   }
