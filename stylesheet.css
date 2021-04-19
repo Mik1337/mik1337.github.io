@@ -85,16 +85,6 @@ figure {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-.mik-messenger {
-  padding-top: 25px;
-  /* background image */
-  background-image: url(https://media.giphy.com/media/UTvuwR7Zyn25CJZri0/giphy-downsized-large.gif);
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .sneaky {
   display: None;
 }
@@ -103,16 +93,7 @@ figure {
   width: 100%;
   height: 100vh;
   /* background image */
-  background-image: url(https://media.giphy.com/media/Vs4EbNX0IChNe/giphy.gif);
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.bluehaze {
-  /* Student of IM  */
-  background-image: url(https://media.giphy.com/media/kHwnICkqQh5RIydbEU/giphy.gif);
+  background-image: url(./assests/windows-giphy.gif);
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -121,7 +102,7 @@ figure {
 }
 .biosphere {
   /* Graduate of IE&M  */
-  background-image: url(https://media1.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+  background-image: url(./assests/space-gifphy.gif);
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -140,50 +121,17 @@ figure {
 .construction {
   vertical-align: middle;
 }
-.thotdynamiks {
-  background-image: url(https://media.giphy.com/media/xUOwGggqGjv0yQfUgU/giphy.gif);
-  vertical-align: middle;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.nyander {
-  /* Nyander promo */
-  background-image: url(https://media.giphy.com/media/zYQyUBXhM9RhS/giphy.gif);
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .awwww {
   /* awwww */
   padding-top: 50px;
-  background-image: url(https://media.giphy.com/media/l0HlFIiE7rbmeklZC/giphy.gif);
+  background-image: url(./assests/float-giphy.gif);
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /* style=position: absolute; */
-}
-.hitmeup {
-  /*  @me if you wanna skeet me */
-  background-image: url(https://media.giphy.com/media/l41lO0QvEQ8kjaIko/giphy.gif);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
-.my-messages {
-  /* Nyander promo */
-  background-image: url(https://media.giphy.com/media/26ufplp8yheSKUE00/giphy.gif);
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .blur {
   background-image: -webkit-linear-gradient(#fd04d7, #40e0d0);
@@ -300,7 +248,7 @@ figure {
   margin-right: 1vw;
 }
 .footer {
-  background-image: url(https://media.giphy.com/media/3o7ZeOw6hJ7rFJMcTe/source.gif);
+  background-image: url(./assests/noise-gifphy.gif);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
