@@ -8,18 +8,14 @@
       href="https://i.imgur.com/CmYcjAK.png"
     />
     <meta http-equiv="X-U-A-Compatible" content="IE=edge,chrome=1" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:500i,600i,700i,800i,900i"
-      rel="stylesheet"
-    />
     <title>Mik</title>
     <link href="stylesheet.css" rel="stylesheet" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
@@ -32,6 +28,21 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-136836752-1"
     ></script>
+    <!-- nes.css imports -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <!-- <link
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://unpkg.com/nes.icons@latest/css/nes-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ness.css imports ends -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -67,19 +78,15 @@
           <li class="nav-item">
             <a class="nav-link" href="#">WELCOME</a>
           </li>
+          &nbsp;
           <li class="nav-item">
             <a class="nav-link" href="#bio">BIO</a>
           </li>
+          &nbsp;
           <li class="nav-item">
             <a class="nav-link" href="#awwww">MY.SLICE(LIFE)</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#chat">SAY@ME</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#skeet">@SKEET</a>
-          </li> -->
-          <!-- Dropdown -->
+          &nbsp;
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
@@ -118,280 +125,209 @@
             </div>
           </li>
         </ul>
-        <ul class="nav navbar-nav ml-auto pull-right nav-extras">
-          <li class="nav-item">
-            <a class="nav-link" href="construction.html"
-              ><i class="far fa-dizzy"> Rambles Of a Brok'En Mind</i></a
-            >
-          </li>
-        </ul>
       </div>
     </nav>
 
-    <center>
-      <div class="homeboy vertical-center">
-        <div class="rotato">
-          <p class="colourmod bigbig">Thank you</p>
-          <p class="colourmod big">~ for coming to my internet website ~</p>
-          <p class="colourmod big">— Mik</p>
-          <a href="https://github.com/Mik1337"
-            ><i class="colourmod big fab fa-github iconspacing"></i
-          ></a>
+    <div class="homeboy vertical-center">
+      <div class="rotato">
+        <p class="colourmod bigbig">Thank you</p>
+        <p class="colourmod big">~ for coming to my internet website ~</p>
+        <p class="colourmod big">— Mik</p>
+        <section class="icon-list">
           <a href="https://www.twitch.tv/m1k2448"
-            ><i class="colourmod big fab fab fa-twitch iconspacing"></i
+            ><i class="nes-icon twitch is-large iconspacing"></i
+          ></a>
+          <a href="https://github.com/Mik1337"
+            ><i class="nes-octocat animate iconspacing"></i
           ></a>
           <a href="https://twitter.com/GreaterMik"
-            ><i class="colourmod big fab fa-twitter iconspacing"></i
+            ><i class="nes-icon twitter is-large iconspacing"></i
           ></a>
-          <a href="https://mik1337.wordpress.com"
-            ><i class="colourmod big fab fa-wordpress-simple iconspacing"></i
-          ></a>
-          <a
+          <!-- <a href="https://mik1337.wordpress.com"
+            ><i class="nes-icon wordpress"></i
+          ></a> -->
+          <!-- <a
             href="https://open.spotify.com/user/9x83k63yg01jx2881u7fweixp/playlist/5cshPsB8lNxsXbL9X6wMKD"
-            ><i class="colourmod big fas fa-headphones iconspacing"></i
-          ></a>
+            ><i class="nes-icon spotify"></i
+          ></a> -->
+        </section>
+      </div>
+    </div>
+
+    <div id="bio" class="biosphere vertical-center">
+      <p class="colourmod bigbig">HEWWO</p>
+      <p class="colourmod big">
+        I'm a 21 year old with a degree in <br />
+        <a
+          href="https://www.bachelorsportal.com/articles/636/what-is-industrial-engineering-and-why-should-i-study-it.html"
+          >Industrial Engineering & Management</a
+        >
+      </p>
+      <span>
+        <br /><br /><br />
+        <a href="https://portfolio.kaijulabs.xyz/">
+          <p class="big neon-signboard">HIRE <span>ME</span></p></a
+        >
+      </span>
+    </div>
+
+    <div id="awwww" class="awwww container-fluid">
+      <p class="colourmod bigbig">My slice of life</p>
+      <p class="blur big">Here's what people have to say about me :3</p>
+      <a href="./hotopic.html">
+        <div class="row">
+          <img
+            class="image col-md-4 bottom-pad"
+            id="sunlight"
+            src="https://i.imgur.com/b9qZq9r.png"
+            alt="Me: I'm the sunlight in your life, It's sad that you don't recognize, Legend: No wonder my life's dark"
+          />
+          <img
+            class="image col-md-4 bottom-pad"
+            id="vangogh"
+            src="https://i.imgur.com/sREjJut.png"
+            alt="Van Gogh dies at the end unrecognised, the only difference is you aren't gonna be unrecognised even after"
+          />
+          <img
+            class="image col-md-4 bottom-pad"
+            id="pickup"
+            src="https://i.imgur.com/G8jFW7m.png"
+            alt="Me: Guys, rate my pickup act; Dìya: 0 Done XD; Pæoshni: 0"
+          />
         </div>
-      </div>
+      </a>
+      <br />
+      <p class="colourmod big">--------------------------</p>
+    </div>
 
-      <div id="bio" class="biosphere vertical-center">
-        <p class="colourmod bigbig">HEWWO</p>
-        <p class="colourmod big">
-          I'm a 21 year old with a degree in <br />
-          <a href="https://www.bachelorsportal.com/articles/636/what-is-industrial-engineering-and-why-should-i-study-it.html">Industrial Engineering & Management</a>
-        </p>
-        <span>
-        </br></br></br>
-          <a href="https://portfolio.kaijulabs.xyz/"><p class="big neon-signboard">HIRE <span>ME</span></p></a>
-        </span>
-      </div>
-
-      <div id="awwww" class="awwww container-fluid">
-        <p class="colourmod bigbig">My slice of life</p>
-        <p class="blur big">Here's what people have to say about me :3</p>
-        <a href="./hotopic.html">
-          <div class="row">
-            <img
-              class="image col-md-4 bottom-pad"
-              id="sunlight"
-              src="https://i.imgur.com/b9qZq9r.png"
-              alt="Me: I'm the sunlight in your life, It's sad that you don't recognize, Legend: No wonder my life's dark"
-            />
-            <img
-              class="image col-md-4 bottom-pad"
-              id="vangogh"
-              src="https://i.imgur.com/sREjJut.png"
-              alt="Van Gogh dies at the end unrecognised, the only difference is you aren't gonna be unrecognised even after"
-            />
-            <img
-              class="image col-md-4 bottom-pad"
-              id="pickup"
-              src="https://i.imgur.com/G8jFW7m.png"
-              alt="Me: Guys, rate my pickup act; Dìya: 0 Done XD; Pæoshni: 0"
-            />
-          </div>
-        </a>
-        <br />
-        <p class="colourmod big">--------------------------</p>
-      </div>
-
-      <div id="chat" class="mik-messenger vertical-center">
-        <div class="container-fluid">
-          <p class="colourmod bigbig">SEND A MESSAGE</p>
-          <p class="blur big">A secret anonymous message ;)</p>
-          <br />
-          <!-- <form
-            action="http://localhost:3000/chat"
-            class="form-fields"
-            method="POST"
-          > -->
-          <form
-            action="https://mik-messenger.herokuapp.com/chat"
-            class="form-fields"
-            method="POST"
-          >
-            <div class="row input-fields bg-blur">
-              <div class="form-group col-xs-2" style="padding-right: 1em">
-                <div class="d-flex flex-column" title="optional">
-                  <label for="name" class="colourmod big control-label">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Mik (optional)"
-                    name="name"
-                    id="name"
-                  />
-                </div>
-              </div>
-              <div class="form-group col-xs-2" style="padding-right: 1em">
-                <div class="d-flex flex-column" title="mandilorian">
-                  <label for="name" class="colourmod big control-label">
-                    Message
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="You're awesome"
-                    name="message"
-                    id="message"
-                  />
-                </div>
-              </div>
-
-              <div class="form-group col-xs-1 ig-handler">
-                <div class="d-flex flex-column" title="optional">
-                  <label for="name" class="colourmod big control-label">
-                    Instagram
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="@username (optional)"
-                    name="instagram"
-                    id="instagram"
-                  />
-                </div>
-              </div>
-              <div class="button-handler">
-                <button class="btn btn-primary col-xs-2">
-                  send message ;)
-                </button>
-              </div>
-            </div>
-          </form>
-          <p class="colourmod big">---------------------------------</p>
+    <div
+      id="footer"
+      class="jumbotron text-center footer"
+      style="margin-bottom: 0"
+    >
+      <div class="row text-center text-xl-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h3>___Self___</h3>
+          <ul class="list-unstyled quick-links">
+            <li>
+              <a href="#"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#bio"><i class="far fa-address-card"></i> About Me</a>
+            </li>
+            <li id="here">
+              <a
+                href="#here"
+                data-toggle="popover"
+                title="Im shy"
+                data-content="email me @ mik23@protonmail.ch with deets"
+              >
+                <i class="far fa-question-circle"></i> Hire Me</a
+              >
+            </li>
+            <li>
+              <a href="./construction.html"
+                ><i class="fas fa-people-carry"></i> My Crazy Brain</a
+              >
+            </li>
+          </ul>
         </div>
-      </div>
 
-      <div
-        id="footer"
-        class="jumbotron text-center footer"
-        style="margin-bottom: 0"
-      >
-        <div class="row text-center text-xl-center text-sm-left text-md-left">
-          <div class="col-xs-12 col-sm-4 col-md-4">
-            <h3>___Self___</h3>
-            <ul class="list-unstyled quick-links">
-              <li>
-                <a href="#"><i class="fas fa-home"></i> Home</a>
-              </li>
-              <li>
-                <a href="#bio"><i class="far fa-address-card"></i> About Me</a>
-              </li>
-              <li id="here">
-                <a
-                  href="#here"
-                  data-toggle="popover"
-                  title="Im shy"
-                  data-content="email me @ mik23@protonmail.ch with deets"
-                >
-                  <i class="far fa-question-circle"></i> Hire Me</a
-                >
-              </li>
-              <li>
-                <a href="./construction.html"
-                  ><i class="fas fa-people-carry"></i> My Crazy Brain</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-xs-12 col-sm-4 col-md-4">
-            <h3>__Projects__</h3>
-            <ul class="list-unstyled quick-links">
-              <li>
-                <a href="https://whack-a-key.herokuapp.com/"
-                  ><img src="https://i.imgur.com/3p80YDX.png" width="20px" />
-                  Whack a Key</a
-                >
-              </li>
-              <!-- <br /> -->
-              <li>
-                <a href="https://babe-yoda.herokuapp.com/"
-                  ><img src="https://i.imgur.com/m6W1lbA.png" width="20px" />
-                  Baby Yoda</a
-                >
-              </li>
-              <!-- <br /> -->
-              <li>
-                <a href="https://mik1337.github.io/chat"
-                  ><img src="https://i.imgur.com/CmYcjAK.png" width="20px" />
-                  Mik Messenger</a
-                ><br />
-              </li>
-              <!-- <li>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h3>__Projects__</h3>
+          <ul class="list-unstyled quick-links">
+            <li>
+              <a href="https://whack-a-key.herokuapp.com/"
+                ><img src="https://i.imgur.com/3p80YDX.png" width="20px" />
+                Whack a Key</a
+              >
+            </li>
+            <!-- <br /> -->
+            <li>
+              <a href="https://babe-yoda.herokuapp.com/"
+                ><img src="https://i.imgur.com/m6W1lbA.png" width="20px" /> Baby
+                Yoda</a
+              >
+            </li>
+            <!-- <br /> -->
+            <li>
+              <a href="https://mik1337.github.io/chat"
+                ><img src="https://i.imgur.com/CmYcjAK.png" width="20px" /> Mik
+                Messenger</a
+              ><br />
+            </li>
+            <!-- <li>
                 <a href="https://fuckvtu.herokuapp.com/"
                   ><i class="fas fa-bullseye"></i> GPA Calculator</a
                 >
               </li> -->
-              <!-- <li>
+            <!-- <li>
                 <a href="./manifest.js"
                   ><i class="fas fa-person-booth"></i> Manifest</a
                 >
               </li> -->
-            </ul>
-          </div>
-
-          <div class="col-xs-12 col-sm-4 col-md-4">
-            <h3>__Branding__</h3>
-            <ul class="list-unstyled quick-links">
-              <li>
-                <a href="https://coolors.co/343a40-e9ecef-f3f3f3-e6e8ec-2a3746"
-                  ><i class="fas fa-swatchbook"></i> Colour Pallet</a
-                >
-              </li>
-              <li>
-                <!-- <a href="https://open.spotify.com/track/5EQzn8CEclXUd2pNidVRG5" -->
-                <a href="https://www.youtube.com/watch?v=0MykEJABbGc"
-                  ><i class="fas fa-headphones-alt"></i> Music</a
-                >
-              </li>
-              <li>
-                <a href="https://i.imgur.com/CmYcjAK.png"
-                  ><img
-                    src="https://i.imgur.com/CmYcjAK.png"
-                    width="25vw"
-                    height="25vh"
-                  />
-                  logo</a
-                >
-              </li>
-            </ul>
-          </div>
+          </ul>
         </div>
 
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-            <ul class="list-unstyled list-inline social text-center">
-              <li class="list-inline-item">
-                <a href="https://github.com/Mik1337/"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="mailto:mik23@protonmail.ch" target="_"
-                  ><i class="fa fa-envelope"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row">
-          <div
-            class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white"
-          >
-            <p class="h6">
-              <a
-                href="https://github.com/Mik1337/"
-                title="Designed and developed by"
-                >Designed and developed by Mik1337</a
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h3>__Branding__</h3>
+          <ul class="list-unstyled quick-links">
+            <li>
+              <a href="https://coolors.co/343a40-e9ecef-f3f3f3-e6e8ec-2a3746"
+                ><i class="fas fa-swatchbook"></i> Colour Pallet</a
               >
-            </p>
-          </div>
+            </li>
+            <li>
+              <!-- <a href="https://open.spotify.com/track/5EQzn8CEclXUd2pNidVRG5" -->
+              <a href="https://www.youtube.com/watch?v=0MykEJABbGc"
+                ><i class="fas fa-headphones-alt"></i> Music</a
+              >
+            </li>
+            <li>
+              <a href="https://i.imgur.com/CmYcjAK.png"
+                ><img
+                  src="https://i.imgur.com/CmYcjAK.png"
+                  width="25vw"
+                  height="25vh"
+                />
+                logo</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </center>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item">
+              <a href="https://github.com/Mik1337"
+                ><i class="nes-octocat animate iconspacing"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:mik23@protonmail.ch" target="_"
+                ><i class="nes-icon envelope is-large"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white"
+        >
+          <p class="h6">
+            <a
+              href="https://github.com/Mik1337/"
+              title="Designed and developed by"
+              >Designed and developed by Mik1337</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
   <script>
     $(document).ready(function () {
